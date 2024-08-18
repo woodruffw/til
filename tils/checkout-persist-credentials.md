@@ -1,6 +1,6 @@
 ---
 title: actions/checkout can leak GitHub credentials
-tags: [github-actions, security]
+tags: [github, github-actions, security]
 date: 2024-08-17
 origin: personal correspondence
 ---
