@@ -37,7 +37,7 @@ But nope: because of `-eq`, `num` is treated with `bash`'s arithmetic evaluation
 rules, meaning that this works:
 
 ```bash
-$ guess 'a[$(cat /etc/passwd > /tmp/pwned; true)] + 42'
+$ guess 'a[$(cat /etc/passwd > /tmp/pwned)] + 42'
 Correct
 $ cat /tmp/pwned
 ```
