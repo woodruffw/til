@@ -19,7 +19,7 @@ cryptographic material disclosure (see [Heartbleed]) or disclosure of machine
 state (e.g. heap addresses) that can make [ASLR] and other mitigation bypasses
 simpler.
 
-Some OSes (e.g. [recent version of XNU]) partially mitigate this by
+Some OSes (e.g. [recent versions of XNU]) partially mitigate this by
 zeroing allocations on `free(3)`, but this is only an improvement in the UAF
 case, not the "uses and/or leaks uninitialized memory from the start" case.
 

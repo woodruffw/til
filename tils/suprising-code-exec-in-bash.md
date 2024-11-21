@@ -46,10 +46,7 @@ Note the single quotes: `$(cat /etc/passwd > ~/pwned)` is **not** executed
 eagerly as a parameter to `guess`, but as part of the evaluation of `-eq`
 within `[[`.
 
-This *also* works with `[` and `test`, so long as their builtin variants
-are used instead of their external binary variants. `/usr/bin/[` and
-`/usr/bin/test` will of course not work, since they have no access to the
-context of the shell that spawned them.
+Unlike the case below, this doesn't appear to work with `[` or `test`.
 
 ## Source 2: `test -v`
 
@@ -61,6 +58,11 @@ not the standard binary):
 $ [[ -v 'x[$(cat /etc/passwd > /tmp/pwned)]' ]]
 $ cat /tmp/pwned
 ```
+
+This *also* works with `[` and `test`, so long as their builtin variants
+are used instead of their external binary variants. `/usr/bin/[` and
+`/usr/bin/test` will of course not work, since they have no access to the
+context of the shell that spawned them.
 
 I'm not 100% sure *why* this is the case, since `-v var` is documented as
 testing whether `var` is set and it shouldn't be necessary to evaluate
