@@ -14,7 +14,7 @@ a rats' nest of shell and YAML they could be useful execution primitives.
 **Edit 2024-11-22**: the [Bash Pitfalls] page in the Wooledge Bash Guide
 contains examples of these, among other sources of surprising evaluations.
 
-[Bash Pitfalls]
+[Bash Pitfalls]: https://mywiki.wooledge.org/BashPitfalls
 
 ## Source 1: arithmetic expressions (a.k.a. "white-collar eval")
 
