@@ -11,6 +11,11 @@ In a historic context these probably weren't *too*
 serious of a problem, but in the context of CI systems where everything is
 a rats' nest of shell and YAML they could be useful execution primitives.
 
+**Edit 2024-11-22**: the [Bash Pitfalls] page in the Wooledge Bash Guide
+contains examples of these, among other sources of surprising evaluations.
+
+[Bash Pitfalls]
+
 ## Source 1: arithmetic expressions (a.k.a. "white-collar eval")
 
 Leading question aside, do you think this snippet of `bash`[^source] can run
@@ -67,6 +72,10 @@ context of the shell that spawned them.
 I'm not 100% sure *why* this is the case, since `-v var` is documented as
 testing whether `var` is set and it shouldn't be necessary to evaluate
 a subscript to determine that.
+
+**Edit 2024-11-22**: Multiple people have pointed out that `-v var[...]`
+checks for the subscript's presence, hence the "need" to evaluate expressions.
+This is not well documented anywhere, as far as I can tell.
 
 [^source]: Minimized and tweaked from [Vidar Holen's blog](https://www.vidarholen.net/contents/blog/?p=716), where I learned about this!
 
