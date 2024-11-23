@@ -1,2 +1,10 @@
 base_url = "https://yossarian.net/til/"
 mastodon = "@yossarian@infosec.exchange"
+
+[[top_links]]
+title = "Homepage"
+url = "https://yossarian.net"
+
+[[top_links]]
+title = "Blog"
+url = "https://blog.yossarian.net"
