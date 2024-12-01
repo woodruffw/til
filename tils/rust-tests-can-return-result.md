@@ -1,7 +1,7 @@
 ---
 title: Rust unit tests can return Result
 date: 2024-11-01
-tags: [rust]
+tags: [rust, testing]
 origin: https://github.com/woodruffw/zizmor/pull/97
 ---
 
