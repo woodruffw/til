@@ -71,6 +71,12 @@ There are of course even more representations, like the Python object
 representation in a `setup.py` file. But these four represent what occurs
 in current "idiomatic" Python packaging workflows.
 
+**Update**: [Brett Cannon points out] there there's a fifth representation,
+which is the JSON layout specified in [PEP 566]. This representation
+transforms keys into lower-case and uses underscores instead of hyphens,
+but also uses JSON types instead of the email-style conventions.
+For example, `License-File` becomes `license_file` (with a list of strings).
+
 [PyPI]: https://pypi.org/
 
 [pip]: https://pip.pypa.io/
@@ -87,3 +93,6 @@ in current "idiomatic" Python packaging workflows.
 
 [but a mapping in the pyproject.toml]: https://github.com/pypa/sampleproject/blob/621e4974ca25ce531773def586ba3ed8e736b3fc/pyproject.toml#L144-L149
 
+[Brett Cannon points out]: https://infosec.exchange/@brettcannon@fosstodon.org/114032331596421141
+
+[PEP 566]: https://peps.python.org/pep-0566/#json-compatible-metadata
