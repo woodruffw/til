@@ -28,7 +28,7 @@ Under ["Arbitrary equality"]:
 > which implements this specification to still install a legacy version which is
 > otherwise incompatible with this specification.
 >
-> An example would be `===foobar` which would match a version of foobar.
+> An example would be `===foobar` which would match a version of `foobar`.
 >
 > This operator may also be used to explicitly require an unpatched version of a
 > project such as `===1.0` which would not match for a version `1.0+downstream1`.
