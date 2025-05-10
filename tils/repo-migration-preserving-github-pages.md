@@ -1,5 +1,5 @@
 ---
-title: Preserving old GitHub Page URLs while migrating a repo
+title: Preserving old GitHub Pages URLs while migrating a repo
 date: 2025-05-09
 tags: [github, web]
 origin: personal correspondence
