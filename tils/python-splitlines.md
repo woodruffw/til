@@ -2,6 +2,7 @@
 title: Python's splitlines does a lot more than just newlines
 date: 2025-10-08
 tags: [python]
+origin: personal correspondence with Seth Larson
 ---
 
 (With thanks to [Seth Larson] for taking me down this rabbit hole.)
