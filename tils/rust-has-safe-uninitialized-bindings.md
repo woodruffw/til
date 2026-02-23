@@ -1,5 +1,5 @@
 ---
-title: Rust has safe uninitialized variables
+title: Rust has safe uninitialized bindings
 date: 2026-02-22
 tags: [rust]
 ---
