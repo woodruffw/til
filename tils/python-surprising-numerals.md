@@ -39,7 +39,7 @@ ValueError: invalid literal for int() with base 10: '二'
 ValueError: invalid literal for int() with base 10: '이'
 ```
 
-This was surprising to me as someone who doesn't read these languages
+This was surprising to me as someone who doesn't read these scripts
 (and who doesn't think much about Unicode), but there _is_ a
 consistency to it: Arabic, Persian, Sundanese (and Thai, etc.)
 numerals are all `Numeric_Type=Decimal` in Unicode, whereas Chinese/Japanese
@@ -51,7 +51,7 @@ no numeric type[^1].
 
 As a table:
 
-| Language | Example | Unicode category | `int()` conversion | `isdecimal()` | `isdigit()` | `isnumeric()` |
+| Script | Example | Unicode category | `int()` conversion | `isdecimal()` | `isdigit()` | `isnumeric()` |
 |----------|---------|-----------------|------------------|---------------|-------------|----------------|
 | Western Arabic | 2 | De | ✅ | ✅ | ✅ | ✅ |
 | Eastern Arabic | ٢ | De | ✅ | ✅ | ✅ | ✅ |
