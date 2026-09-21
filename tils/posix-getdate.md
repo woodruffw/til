@@ -18,7 +18,7 @@ In English: both parse an input into a `struct tm`, but that's where the similia
 
 - `strptime(3)` accepts a `struct tm*` to write into; `getdate(3)` is defined to return
   a `struct tm*` (which implies non-reentrancy, and POSIX.1-2024 formalizes this by saying
-  it "need not be thread-safe).
+  it "need not be thread-safe").
 - `strptime(3)` returns `NULL` on error, and (as of POSIX.1-2024) otherwise defines no
   error states; `getdate(3)` has its own special `getdate_err` error variable or macro
   that reflects the error state. POSIX.1-2024 does not define whether `errno` is affected
