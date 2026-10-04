@@ -167,7 +167,7 @@ binary's total size: we found that we could shrink uv's binary size by approxima
 160KB by preventing[^how] `rustc` from inlining a given `Debug` implementation.
 
 This was surprising to me on two levels: the size cost added up fast, and `rustc`
-(seemingly) did not apply a limiy to the size or number of times a `Debug` implementation
+(seemingly) did not apply a limit to the size or number of times a `Debug` implementation
 was inlined. I suspect this is the right decision in many programs, however!
 
 [implied by example in the reference]: https://doc.rust-lang.org/reference/attributes/derive.html
