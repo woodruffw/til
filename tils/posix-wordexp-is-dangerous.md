@@ -1,6 +1,6 @@
 ---
 title: "POSIX wordexp(3) is dangerous"
-tags: [c, posix]
+tags: [c, posix, security]
 date: 2026-10-25
 ---
 
